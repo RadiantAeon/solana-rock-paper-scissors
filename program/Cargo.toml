@@ -1,0 +1,17 @@
+[package]
+name = "program"
+version = "1.0.0"
+
+[features]
+no-entrypoint = []
+test-sbf = []
+
+[dependencies]
+arrayref = "0.3.6"
+solana-program = "1.14.13"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
